@@ -1,6 +1,7 @@
 import os
 from tkinter import *
 from PIL import ImageTk
+from config import config
 
 root = Tk()
 
@@ -99,7 +100,9 @@ btnzout.bind("<Button-1>",zoomout)
 levelnum = 0
 xnum = 0    
 ynum = 0
-base = "osmmapMapnik"
+base = config.path_to_map
+
+#base = "C:/GeoScan/osmmapMapnik"
 path = "%s\%s\%s\%s\%s\%s"
 
 #список папок, представляющих уровни                  
